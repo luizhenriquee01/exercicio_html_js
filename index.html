@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Formulario Campos</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario</h1>
+      <h2>Validação de campos</h2>
+      <form id="form">
+        <label class="label" for="inputA">Campo-A</label>
+        <input
+          id="inputA"
+          type="number"
+          name="inputB"
+          required
+          placeholder="Aqui o Número 'campo-A'"
+        />
+        <br />
+        <br />
+        <label class="label" for="InputB">Campo-B</label>
+        <input
+          id="inputB"
+          type="number"
+          name="inputB"
+          required
+          placeholder="Aqui o Número 'campo-B'"
+        />
+        <br />
+        <br />
+        <button id="submit" type="submit">Enviar Formulario</button>
+        <br />
+        <input
+          id="button-reload"
+          type="button"
+          value="Refazer"
+          onClick="window.location.reload()"
+        />
+      </form>
+      <br />
+      <p id="sucess-message"></p>
+      <p id="error-message">
+        AAH NÂO!! O seu numero do campo B tem que ser maior que o Número do
+        campo A
+        <br />
+        Aperte <b>'Refazer'</b> e Tente novamente!
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
